@@ -11,7 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import logoPng from "@/assets/fav.png";
+import logoPng from "@/assets/rekago-logo.png";
 
 function NotFoundComponent() {
   return (
@@ -80,8 +80,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "AH Electricals & Plumbing — Malappuram | Wiring, Plumbing & Emergency Repairs" },
       { name: "description", content: "Professional electrical and plumbing services across Malappuram. Certified technicians, 24/7 emergency support, transparent quotes and lasting workmanship." },
-      { name: "author", content: "AH Electricals & Plumbing" },
-      { name: "theme-color", content: "#0B2C5F" },
+      { name: "author", content: "REKAGO Car Wash & Cafe" },
+      { name: "theme-color", content: "#0a0a0b" },
       { property: "og:title", content: "AH Electricals & Plumbing — Powering homes. Fixing flows." },
       { property: "og:description", content: "Reliable installation, maintenance and emergency repair services across Malappuram." },
       { property: "og:type", content: "website" },
@@ -92,7 +92,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", href: logoPng, type: "image/png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" },
     ],
   }),
   shellComponent: RootShell,

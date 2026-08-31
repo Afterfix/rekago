@@ -15,6 +15,7 @@ import {
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence, MotionConfig } from "framer-motion";
 import heroImage from "../assets/rekago-hero.jpg";
+import interior from "../assets/rekago-interior.png";
 import logoAsset from "../assets/rekago-logo.png";
 import cafeImage from "../assets/rekago-cafe.jpg";
 import gamingImage from "../assets/rekago-gaming.jpg";
@@ -545,6 +546,7 @@ function HomePage() {
     { src: heroImage, alt: "REKAGO car wash bay" },
     { src: foamImage, alt: "Car covered in white wash foam" },
     { src: detailImage, alt: "Detailing the interior of a car at REKAGO" },
+    { src: interior, alt: "REKAGO car wash interior" },
     { src: gamingImage, alt: "Gaming at REKAGO" },
     { src: cafeImage, alt: "REKAGO cafe interior" },
   ];
@@ -582,7 +584,7 @@ function HomePage() {
     {
       title: "Interior Detailing",
       text: "A more detailed cleaning experience for an extra level of care.",
-      image: heroImage,
+      image: interior,
     },
     {
       title: "Custom Service",

@@ -18,6 +18,10 @@ import heroImage from "../assets/rekago-hero.jpg";
 import interior from "../assets/rekago-interior.png";
 import logoAsset from "../assets/rekago-logo.png";
 import cafeImage from "../assets/rekago-cafe.jpg";
+import cafeImage2 from "../assets/cafeteria-2.png";
+import rekagoimg from "../assets/rekago2.png";
+import carwash from "../assets/carwash.png";
+import carwash2 from "../assets/carwash-2.png";
 import gamingImage from "../assets/rekago-gaming.jpg";
 import foamImage from "../assets/rekago-foam.jpg";
 import detailImage from "../assets/rekago-detail.jpg";
@@ -543,12 +547,17 @@ function HomePage() {
     },
   ];
   const galleryImages = [
-    { src: heroImage, alt: "REKAGO car wash bay" },
+    { src: rekagoimg, alt: "REKAGO" },
+    { src: cafeImage2, alt: "REKAGO cafe interior" },
     { src: foamImage, alt: "Car covered in white wash foam" },
-    { src: detailImage, alt: "Detailing the interior of a car at REKAGO" },
+    { src: heroImage, alt: "REKAGO car wash bay" },
+    { src: carwash, alt: "Car being washed at REKAGO" },
     { src: interior, alt: "REKAGO car wash interior" },
-    { src: gamingImage, alt: "Gaming at REKAGO" },
-    { src: cafeImage, alt: "REKAGO cafe interior" },
+    { src: detailImage, alt: "Detailing the interior of a car at REKAGO" },
+    { src: carwash2, alt: "Car being washed at REKAGO" },
+
+
+
   ];
   const reviews: Review[] = [
     {
@@ -594,9 +603,9 @@ function HomePage() {
   ];
   return (
     <MotionConfig reducedMotion="user">
-      <div className="min-h-screen overflow-hidden bg-background text-foreground">
+      <div className="min-h-screen bg-background text-foreground">
         <Header />
-        <main>
+        <main className="overflow-x-hidden">
           <section className="relative flex min-h-[640px] items-end overflow-hidden pb-28 pt-16 sm:min-h-[720px] lg:min-h-[85vh]">
             <img
               src={heroImage}
@@ -656,18 +665,11 @@ function HomePage() {
                   <div>
                     <div className="flex items-center gap-2 text-sm font-semibold uppercase">
                       <Clock3 className="size-4 text-primary" aria-hidden="true" />
-                      Open Now
-                    </div>
-                    <div className="mt-1 text-[10px] uppercase tracking-[0.16em] text-foreground/45">
-                      Until 7:00 PM
+                      7:00 AM - 7:00 PM
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="absolute bottom-6 right-8 hidden items-center gap-3 text-[10px] uppercase tracking-[0.2em] text-foreground/45 lg:flex">
-              <span className="h-px w-10 bg-primary" />
-              Scroll to explore <ChevronDown className="size-4 animate-bounce" aria-hidden="true" />
             </div>
           </section>
           <section className="relative z-20 -mt-10 pb-20 sm:-mt-16">
